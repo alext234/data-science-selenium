@@ -12,7 +12,15 @@ jobs:
     steps: 
     - uses: actions/checkout@v2 
 
-    - name: Build and Publish 
+    - name: Build and Publish to Dockerhub
+      uses: mr-smithers-excellent/docker-build-push@v2
+      with:
+        image: alext234/datascience
+        registry: docker.io
+        username: ${{ secrets.DOCKER_HUB_USERNAME }}
+        password: ${{ secrets.DOCKER_HUB_PASSWORD }}    
+
+    - name: Build and Publish to Github packages
       uses: VaultVulp/gp-docker-action@1.0.1
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }} 
