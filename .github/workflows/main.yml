@@ -17,6 +17,7 @@ jobs:
       with:
         image: alext234/datascience
         registry: docker.io
+        tag: latest
         username: ${{ secrets.DOCKER_HUB_USERNAME }}
         password: ${{ secrets.DOCKER_HUB_PASSWORD }}    
 

@@ -3,10 +3,10 @@ This repo builds a docker image that has Python3, Jupyter notebooks and related 
 
 ## Built image
 
-The built docker image is avaible at
+The built docker image is avaible at Dockerhub
 
 ```
-docker.pkg.github.com/alext234/data-science-selenium/datascience:latest
+alext234/datascience:latest
 ```
 
 
