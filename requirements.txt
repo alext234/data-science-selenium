@@ -1,0 +1,13 @@
+beautifulsoup4==4.8.2
+PyPDF2==1.26.0
+pandas==0.25.3
+seaborn==0.9.0
+jupyter==1.0.0
+jupyter-client==5.3.4
+jupyter-core==4.6.1
+requests==2.22.0
+lxml==4.3.4
+selenium==3.141.0
+
+
+
