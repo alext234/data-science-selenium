@@ -27,7 +27,7 @@ RUN wget -qO- https://github.com/mozilla/geckodriver/releases/download/${FIREFOX
 # pip requirements.txt
 COPY requirements.txt /tmp/requirements.txt
 RUN python -m pip install -r /tmp/requirements.txt
-RUN python -m space download en_core_web_sm
+RUN python -m spacy download en_core_web_sm
 RUN python -m nltk.downloader all
 
 EXPOSE 8888
