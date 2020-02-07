@@ -6,7 +6,23 @@ on:
       - master
 
 jobs:
-  build_docker_image:
+  to_github_packages:
+    runs-on: ubuntu-latest
+
+    steps: 
+    - uses: actions/checkout@v2 
+
+    - name: Build and Publish to Github packages
+      uses: VaultVulp/gp-docker-action@1.0.1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }} 
+        image-name: datascience
+        image-tag: latest
+
+
+
+
+  to_dockerhub:
     runs-on: ubuntu-latest
 
     steps: 
@@ -21,9 +37,3 @@ jobs:
         username: ${{ secrets.DOCKER_HUB_USERNAME }}
         password: ${{ secrets.DOCKER_HUB_PASSWORD }}    
 
-    - name: Build and Publish to Github packages
-      uses: VaultVulp/gp-docker-action@1.0.1
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }} 
-        image-name: datascience
-        image-tag: latest
