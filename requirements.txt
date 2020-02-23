@@ -11,3 +11,4 @@ selenium==3.141.0
 nltk==3.4.5
 spacy==2.2.3
 pdfminer.six==20200124
+html5lib==1.0.1
