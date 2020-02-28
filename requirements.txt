@@ -13,3 +13,4 @@ spacy==2.2.3
 pdfminer.six==20200124
 html5lib==1.0.1
 newscatcher==0.1.0
+tabulate==0.8.6
