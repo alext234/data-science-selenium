@@ -1,6 +1,7 @@
 FROM jupyter/datascience-notebook
 
-ENV CHROME_VER=79.0.3945.36
+# these are the driver versions; they should match the browsers versions
+ENV CHROME_VER=81.0.4044.69
 ENV FIREFOX_VER=v0.26.0
 
 
