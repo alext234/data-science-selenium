@@ -29,8 +29,8 @@ RUN wget -qO- https://github.com/mozilla/geckodriver/releases/download/${FIREFOX
 COPY requirements.txt /tmp/requirements.txt
 RUN python -m pip install -r /tmp/requirements.txt
 
-git config --global user.email "spamcollectorsuperbot@gmail.com"
-git config --global user.name "S.C."
+RUN git config --global user.email "spamcollectorsuperbot@gmail.com"
+RUN git config --global user.name "sc"
 
 
 EXPOSE 8888
