@@ -4,6 +4,8 @@ FROM jupyter/datascience-notebook
 ENV CHROME_VER=81.0.4044.69
 ENV FIREFOX_VER=v0.26.0
 
+# this is the browser version  - it should match with the driver
+ENV CHROME_BROWSER_VER=81.0.4044.113-1 
 
 USER root
 
@@ -12,7 +14,7 @@ RUN apt-get update && \
 	apt-get install -y gnupg && \
 	wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - && \
 	sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' && \
-	apt-get update && apt-get install -y google-chrome-stable firefox vim zip
+	apt-get update && apt-get install -y google-chrome-stable=${CHROME_BROWSER_VER} firefox vim zip
 
 
 # chrome driver
