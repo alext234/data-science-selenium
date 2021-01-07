@@ -6,7 +6,7 @@ jupyter==1.0.0
 jupyter-client==5.3.4
 jupyter-core==4.6.1
 requests==2.22.0
-lxml==4.3.4
+lxml==4.6.2
 selenium==3.141.0
 nltk==3.4.5
 spacy==2.2.3
