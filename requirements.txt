@@ -16,6 +16,6 @@ newscatcher==0.2.0
 tabulate==0.8.6
 b2==3.2.1
 gdown==3.10.2
-tensorflow==2.5.2
+tensorflow==2.7.2
 PyGithub==1.47
 kaggle==1.5.4
